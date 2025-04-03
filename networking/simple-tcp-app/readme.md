@@ -1,0 +1,2 @@
+This module is core package of Nodejs, It's use to create TCP connection and server.
+It starts a server and when a tcp client connects to it, it opens up persistent connection with client through which stream of data is passed.
