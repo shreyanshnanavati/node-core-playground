@@ -15,6 +15,10 @@ const socket = net.createConnection({ host: "127.0.0.1", port: 8999 }, async () 
 
 });
 
+socket.on("data",(data) => {
+  console.log(data.toString("utf-8"));
+})
+
 socket.on("end", () => {
   console.log("Connection Ended");
 });
